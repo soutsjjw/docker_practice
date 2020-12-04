@@ -71,6 +71,14 @@ filename: POSIX tar archive
 $ docker save alpine | gzip > alpine-latest.tar.gz
 ```
 
+在Windows 10中：
+
+```bash
+> docker save alpine -o alpine-latest.tar | gzip alpine-latest.tar
+```
+
+Windows 10的[gzip](http://gnuwin32.sourceforge.net/packages/gzip.htm)
+
 然后我们将 `alpine-latest.tar.gz` 文件复制到了到了另一个机器上，可以用下面这个命令加载镜像：
 
 ```bash
